@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>
+        Kaneraa | Shruti Yadav
+    </title>
+    <link rel="shortcut icon" href="2-fivicon.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img src="logo.jpg" width="200px">
+
+    <div id="navbar">
+        <a href="index.html" style="margin-left: 0px;">HOME</a>
+        <a href="resume.html">RÉSUMÉ</a>
+        <a class="active" href="work.html">WORK</a>
+        <a href="muse.html">MUSE</a>
+        <a href="contact.html" style="float: right; text-align: center; width: 15%;">GET IN TOUCH</a>
+    </div>
+    <hr class="abovefooter">
+    <footer>
+        <img class="footera" src="logo.jpg">
+        <button class="contact">GET IN TOUCH</button>
+    </footer>
+
+    <button id="myBtn"><a href="#top">Top</a></button>
+
+    <script>
+
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
